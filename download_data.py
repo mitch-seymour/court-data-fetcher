@@ -19,7 +19,7 @@ def fetch_and_save_files():
         links = json.load(links_file)
 
         for link in links:
-            file_name = 'files/' + link['date'].replace('/', '_') + '.csv'
+            file_name = 'files/' + link['date'].replace('/', '_') + '.xlsx'
             download_file(link['url'], file_name)
 
 
